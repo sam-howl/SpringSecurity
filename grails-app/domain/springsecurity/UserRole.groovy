@@ -1,12 +1,14 @@
 package springsecurity
 
 import grails.gorm.DetachedCriteria
+import grails.rest.Resource
 import groovy.transform.ToString
 
 import org.codehaus.groovy.util.HashCodeHelper
 import grails.compiler.GrailsCompileStatic
 
 //@GrailsCompileStatic
+@Resource(uri ="/userrole")
 @ToString(cache=true, includeNames=true, includePackage=false)
 class UserRole implements Serializable {
 
